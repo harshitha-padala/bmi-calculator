@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #ec407a; /* Pink color */
+    font-size: 2em;
+}
+
+.calculator {
+    background-color: #f8bbd0; /* Light pink for calculator background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.calculator:hover {
+    transform: scale(1.02);
+    background-color: #f48fb1; /* Slightly darker pink on hover */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ec407a; /* Pink color */
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ec407a;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ec407a; /* Pink color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #333;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#result {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+#result.show {
+    opacity: 1;
+    transform: translateY(0);
+}
